@@ -6,6 +6,7 @@
     <title>RenaSer</title>
     <link rel="stylesheet" href="stylesRenaSer.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header class="navbar">
@@ -17,6 +18,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#historia">Historia</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#concientizacion">Concientización</a></li>
                 <li><a href="#fundadora">Fundadora</a></li>
@@ -26,20 +28,120 @@
 
     <section id="home" class="section">
         <h2>RenaSer</h2>
-        <p>"RenaSer es pionera en educación ambiental y concientización de la biodiversidad en Colombia"</p>
+        <p class="frase-principal">RenaSer es pionera en educación ambiental y concientización de la biodiversidad en Colombia</p>
         <img src="Madre_Tierra_Colombia.png" alt="Madre Tierra">
     </section>
 
     <section id="historia" class="section">
         <h2>Historia</h2>
+        <p>La Fundación RenaSer es una organización sin fines de lucro dedicada a la preservación del medio ambiente y al desarrollo sostenible a través de la educación, investigación y acción comunitaria.</p>
+
     </section>
 
-    <section id="educacion" class="section">
+    <section class="timeline-section">
+        <h2>Línea del Tiempo</h2>
+        <div class="timeline-container">
+
+            <div class="timeline-block left">
+                <div class="timeline-image">
+                    <img src="ruta/a/la-imagen1.jpg" alt="Evento 2005">
+                </div>
+                <div class="timeline-content">
+                    <h3>2005</h3>
+                    <p>RenaSer nace como iniciativa local enfocada en la educación ambiental comunitaria.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block right">
+                <div class="timeline-image">
+                    <img src="ruta/a/la-imagen2.jpg" alt="Evento 2010">
+                </div>
+                <div class="timeline-content">
+                    <h3>2010</h3>
+                    <p>Expansión a nivel regional, con actividades en nuevas comunidades de Colombia.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block left">
+                <div class="timeline-image">
+                    <img src="ruta/a/la-imagen3.jpg" alt="Evento 2020">
+                </div>
+                <div class="timeline-content">
+                    <h3>2020</h3>
+                    <p>Reconocimiento nacional como organización educativa en temas ambientales.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <<section id="objetivos" class="section">
+        <h2 style="text-align: center;">Nuestros Objetivos</h2>
+        <p style="text-align: center;">Contribuimos con la preservación, recuperación y uso racional de los recursos naturales.</p>
+        <div class="objetivos-grid">
+            <div class="objetivo-box">
+                <i class="fas fa-book-open icono-objetivo"></i>
+                <h3>Educación Ambiental</h3>
+                <p>Desarrollamos acciones educativas en todas sus formas para promover la conciencia ambiental.</p>
+            </div>
+            <div class="objetivo-box">
+                <i class="fas fa-globe icono-objetivo"></i>
+                <h3>Divulgación</h3>
+                <p>Mejoramos la información y divulgación de todos los aspectos relacionados con el medio ambiente.</p>
+            </div>
+            <div class="objetivo-box">
+                <i class="fas fa-flask icono-objetivo"></i>
+                <h3>Investigación</h3>
+                <p>Realizamos estudios y proyectos relacionados con la temática ambiental y socioeconómica.</p>
+            </div>
+            <div class="objetivo-box">
+                <i class="fas fa-leaf icono-objetivo"></i>
+                <h3>Nuevos Valores</h3>
+                <p>Desarrollamos una ética hacia la naturaleza que conlleve cambios de comportamiento para una mejor calidad de vida.</p>
+            </div>
+        </div>
+    </section>
+
+    <<section id="educacion" class="section">
         <h2>Educación</h2>
+        <p class="intro">
+            A través de libros y álbumes educativos, RenaSer ha ayudado a miles de colombianos a descubrir y valorar la biodiversidad del país.
+        </p>
+
+        <div class="publicaciones-grid">
+
+            <div class="publicacion">
+                <img src="nuestra-fauna.png" alt="Nuestra Fauna">
+                <h3>Nuestra Fauna</h3>
+                <p>Álbum ilustrado que invita a conocer las especies más emblemáticas de Colombia.</p>
+            </div>
+
+            <div class="publicacion">
+                <img src="mariposas.png">
+                <h3>El Encanto de las Mariposas</h3>
+                <p>Una colección visual para descubrir la belleza y diversidad de las mariposas colombianas.</p>
+            </div>
+
+            <div class="publicacion">
+                <img src="defensores.jpg" alt="Los Defensores del Arcoíris">
+                <h3>Los Defensores del Arcoíris</h3>
+                <p>Libro-álbum que narra la historia de jóvenes protectores del medio ambiente.</p>
+            </div>
+
+            <div class="publicacion">
+                <img src="salvar-especies.jpg" alt="Cómo salvar una especie">
+                <h3>Cómo salvar una especie en vía de extinción</h3>
+                <p>Guía educativa sobre estrategias de conservación para salvar especies amenazadas.</p>
+            </div>
+
+        </div>
     </section>
 
     <section id="concientizacion" class="section">
         <h2>Concientización</h2>
+        <p>Creemos en un futuro donde las comunidades vivan en equilibrio con su entorno natural, aprovechando los recursos de manera responsable y preservándolos para las generaciones futuras.</p>
     </section>
 
     <section id="fundadora" class="section">
@@ -49,5 +151,11 @@
     <footer>
         <p>&copy; 2025 RenaSer - Todos los derechos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
 </body>
 </html>
