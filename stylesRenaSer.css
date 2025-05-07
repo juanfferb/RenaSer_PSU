@@ -347,36 +347,50 @@ footer {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 2rem;
 }
 
+.donacion-qr {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  display: flex;
+  justify-content: flex-end; /* lo alinea más a la izquierda del contenedor total */
+  align-items: center;
+}
+
 .donacion-qr img {
-  max-width: 250px;
   width: 100%;
+  max-width: 350px; /* MÁS GRANDE */
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translate(-80px, 40px);
 }
 
 .donacion-texto {
-  max-width: 500px;
-  color: #2e8b57;
-  text-align: justify; /* Texto justificado */
+  flex: 2;
+  min-width: 300px;
+  max-width: 600px;
+  color: #000000;
+  text-align: justify;
 }
 
 .donacion-texto h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  margin-top: -60px;
+  margin-top: 0;
+  text-align: left;
+  color: #2e8b57;
 }
 
 .donacion-texto p {
   font-size: 1.05rem;
   line-height: 1.6;
   margin-bottom: 0.8rem;
-  color: #000000; /* Aseguramos que el texto sea negro */
-  text-align: justify; /* Justificación para los párrafos */
+  color: #000000;
+  text-align: justify;
 }
 
 /* HISTORIA */
