@@ -334,3 +334,93 @@ footer {
   font-size: 0.95rem;
   color: #555;
 }
+
+/* donaciones */
+
+.donaciones-section {
+  background-color: #f1fdf2;
+  padding: 3rem 1rem;
+}
+
+.donaciones-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.donacion-qr img {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.donacion-texto {
+  max-width: 500px;
+  color: #2e8b57;
+  text-align: justify; /* Texto justificado */
+}
+
+.donacion-texto h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  margin-top: -60px;
+}
+
+.donacion-texto p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  color: #000000; /* Aseguramos que el texto sea negro */
+  text-align: justify; /* Justificación para los párrafos */
+}
+
+/* HISTORIA */
+
+.historia-section {
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+.historia-bloque {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.historia-bloque.reverse {
+  flex-direction: row-reverse;
+}
+
+.historia-texto {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  text-align: justify;
+}
+
+.historia-texto h2 {
+  color: #2e6e33;
+  margin-bottom: 1rem;
+}
+
+.historia-imagen {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+}
+
+.historia-imagen img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
