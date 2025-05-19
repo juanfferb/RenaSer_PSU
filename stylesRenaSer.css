@@ -296,9 +296,10 @@ footer {
 
 .publicaciones-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   justify-items: center;
+  margin-top: 2rem;
 }
 
 .publicacion {
@@ -475,4 +476,53 @@ footer {
 
 .textoFundadora ul li {
   margin-bottom: 0.5em;
+}
+
+/*MODAL LIBROS*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+}
+.modal-content p {
+  text-align: justify;
+  margin-bottom: 1.2rem;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/*BOTON VER MAS*/
+.boton-vermas {
+  background-color: #2e8b57; /* Verde tipo selva */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-vermas:hover {
+  background-color: #256e45; /* Verde más oscuro al pasar el mouse */
 }
