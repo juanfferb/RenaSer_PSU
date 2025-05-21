@@ -28,12 +28,14 @@ body {
     }
 }
 
-/* Ajuste de logo como imagen */
-.logo img {
-    height: 50px; /* Ajusta según el alto deseado de la navbar */
+#home .logo img {
+    height: 200px; /* ajusta a un tamaño más pequeño */
     width: auto;
     object-fit: contain;
     display: block;
+    margin: 0 auto;
+    margin-bottom: 30px; /* Espacio entre logo y frase */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil para elegancia */
 }
 
 /* Navbar - sin cambios esenciales excepto padding optimizado */
@@ -64,6 +66,7 @@ body {
   text-align: center;
   margin-top: 0.5rem;
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 40px; /* Espacio entre frase e imagen */
 }
 
 /* Navegación */
@@ -525,4 +528,48 @@ footer {
 
 .boton-vermas:hover {
   background-color: #256e45; /* Verde más oscuro al pasar el mouse */
+}
+
+/* Sección de concientización */
+#concientizacion {
+    background-color: #f0f7f4;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#concientizacion h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2c6e49;
+}
+
+.concientizacion-contenido {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.concientizacion-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.concientizacion-imagenes img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.concientizacion-imagenes img:hover {
+    transform: scale(1.05);
 }
